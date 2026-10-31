@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Desinflame para se proteger · E-book de Fabiana Motta</title>
+<meta name="description" content="Um guia de hábitos para a prevenção do câncer feminino através da alimentação, movimento e autocuidado. E-book de Fabiana Motta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #F2D5DB;
+    --pink-2: #E8BCC7;
+    --sand: #F5EFE8;
+    --sand-2: #EBE1D6;
+    --paper: #FFFCF8;
+    --ink: #231C1F;
+    --ink-soft: #5E5458;
+    --line: #DCD0C4;
+    --rose: #B23F65;
+    --rose-dark: #962F52;
+    --sage: #5F7458;
+    --radius: 18px;
+    --wrap: 1080px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--sand);
+    color: var(--ink);
+    font: 400 17px/1.6 "Archivo", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  .narrow { max-width: 720px; }
+  h1, h2, h3 { line-height: 1.08; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: clamp(1.9rem, 4.6vw, 2.9rem); font-weight: 900; }
+  .serif { font-family: "Fraunces", Georgia, serif; font-weight: 400; font-style: italic; }
+  .eyebrow {
+    font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--rose); margin: 0 0 14px;
+  }
+  section { padding: 80px 0; }
+  .section-head { margin-bottom: 40px; }
+
+  .mock-bar { background: var(--ink); color: #F5EFE8; font-size: .8rem; text-align: center; padding: 7px 20px; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 18px 32px; border-radius: 999px; font-weight: 800; font-size: 1.05rem; letter-spacing: .01em;
+    text-decoration: none; background: var(--rose); color: #fff; transition: background .2s, transform .2s;
+    box-shadow: 0 10px 24px rgba(150, 47, 82, .28);
+  }
+  .btn:hover { background: var(--rose-dark); transform: translateY(-1px); }
+
+  /* Hero */
+  .hero { background: var(--pink); padding: 28px 0 72px; }
+  .brand-line {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    font-size: .82rem; color: #6B4A55; margin-bottom: 44px;
+  }
+  .brand-line strong { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.1rem; color: var(--ink); }
+  .hero-grid { display: grid; gap: 40px; align-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .chips span {
+    background: rgba(255, 255, 255, .55); border: 1px solid rgba(35, 28, 31, .12);
+    padding: 6px 12px; border-radius: 999px; font-size: .8rem; font-weight: 600;
+  }
+  .hero h1 { font-size: clamp(2.7rem, 8.5vw, 5rem); font-weight: 900; text-transform: uppercase; line-height: .95; letter-spacing: -0.02em; }
+  .hero .sub { font-size: 1.15rem; color: #4A3D42; margin: 22px 0 18px; max-width: 30em; }
+  .hero .quote { font-size: 1.35rem; color: var(--rose-dark); margin: 0 0 30px; }
+  .price-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; }
+  .price { line-height: 1.1; }
+  .price b { font-size: 2.3rem; font-weight: 900; display: block; }
+  .price small { color: #6B4A55; font-size: .85rem; }
+  .hero-cover { justify-self: center; width: min(330px, 78%); }
+  .book {
+    border-radius: 4px 12px 12px 4px;
+    box-shadow: -14px 24px 48px rgba(110, 35, 60, .32), inset 5px 0 0 rgba(0, 0, 0, .08);
+    transform: rotate(2.5deg);
+  }
+  @media (min-width: 860px) {
+    .hero { padding: 32px 0 100px; }
+    .hero-grid { grid-template-columns: 1.25fr .75fr; gap: 56px; }
+    .hero-cover { width: 100%; }
+  }
+
+  /* Identificação */
+  .pain p { font-size: 1.15rem; color: var(--ink-soft); margin: 0 0 18px; }
+  .pain .beats { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 6px; }
+  .pain .beats li { font-size: clamp(1.4rem, 3.6vw, 1.9rem); font-weight: 800; line-height: 1.2; }
+  .pain .beats li:last-child { color: var(--rose); }
+  .pain blockquote {
+    margin: 30px 0; padding: 24px 28px; background: var(--paper); border-left: 4px solid var(--rose);
+    border-radius: 0 var(--radius) var(--radius) 0; font-size: 1.3rem;
+  }
+  .pain blockquote small { display: block; font-family: "Archivo", sans-serif; font-style: normal; font-size: .9rem; color: var(--ink-soft); margin-bottom: 8px; }
+
+  /* O que vai encontrar */
+  .learn { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .modules { display: grid; gap: 16px; counter-reset: mod; }
+  @media (min-width: 720px) { .modules { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 980px) { .modules { grid-template-columns: repeat(3, 1fr); } }
+  .module {
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; background: var(--sand);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .module .num { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--sage); }
+  .module h3 { font-size: 1.25rem; font-weight: 800; }
+  .module p { margin: 0; color: var(--ink-soft); font-size: .97rem; }
+
+  /* Espie por dentro */
+  .peek { background: var(--sand-2); overflow: hidden; }
+  .pages { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(180px, 1fr)); overflow-x: auto; padding: 10px 4px 24px; scroll-snap-type: x mandatory; }
+  .pages figure { margin: 0; scroll-snap-align: start; }
+  .pages img { border-radius: 6px; box-shadow: 0 14px 30px rgba(35, 28, 31, .16); }
+  .pages figcaption { font-size: .88rem; color: var(--ink-soft); margin-top: 12px; }
+  .peek .hint { font-size: .85rem; color: var(--ink-soft); }
+  @media (min-width: 860px) {
+    .pages { overflow: visible; }
+    .peek .hint { display: none; }
+  }
+
+  /* Pra quem é */
+  .fit { display: grid; gap: 16px; }
+  @media (min-width: 860px) { .fit { grid-template-columns: 1fr 1fr; } }
+  .fit-box { border-radius: var(--radius); padding: 30px 28px; }
+  .fit-box.yes { background: var(--paper); border: 1px solid var(--line); }
+  .fit-box.no { background: transparent; border: 1.5px solid var(--line); }
+  .fit-box h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 18px; }
+  .fit-box ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .fit-box li { padding-left: 34px; position: relative; color: var(--ink-soft); }
+  .fit-box li::before {
+    position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%;
+    display: grid; place-items: center; font-size: .75rem; font-weight: 800;
+  }
+  .fit-box.yes li::before { content: "✓"; background: var(--rose); color: #fff; }
+  .fit-box.no li::before { content: "✕"; background: var(--sand-2); color: var(--ink-soft); }
+
+  /* Manifesto */
+  .manifesto { background: var(--ink); color: var(--sand); text-align: center; padding: 96px 0; }
+  .manifesto p { margin: 0 auto; max-width: 18em; font-size: clamp(1.9rem, 5vw, 3.2rem); line-height: 1.15; }
+  .manifesto b { font-family: "Archivo", sans-serif; font-weight: 900; font-style: normal; text-transform: uppercase; color: #F0B9C8; }
+
+  /* Autora */
+  .author-grid { display: grid; gap: 36px; align-items: center; }
+  .photo-ph {
+    aspect-ratio: 1; border-radius: 50%; max-width: 300px; width: 100%; justify-self: center;
+    background: linear-gradient(160deg, #E3E9DE, var(--pink)); border: 1.5px dashed #B9AB9E;
+    display: grid; place-items: center; text-align: center; color: var(--ink-soft); font-size: .9rem; padding: 24px;
+  }
+  .photo-ph b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--ink); }
+  .author p { color: var(--ink-soft); }
+  .author .creds { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .author .creds span { border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: .86rem; background: var(--paper); }
+  .author .creds a { text-decoration: none; }
+  @media (min-width: 860px) { .author-grid { grid-template-columns: .7fr 1.3fr; gap: 64px; } }
+
+  /* Base científica */
+  .science { padding-top: 0; }
+  .science-box { border-top: 1px solid var(--line); padding-top: 48px; }
+  .science h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 8px; }
+  .science .intro { color: var(--ink-soft); margin: 0 0 26px; max-width: 40em; }
+  .refs { display: flex; flex-wrap: wrap; gap: 10px; }
+  .refs span { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px; font-weight: 600; font-size: .92rem; }
+  .refs span small { display: block; font-weight: 400; font-size: .78rem; color: var(--ink-soft); }
+  .support { margin-top: 22px; font-size: .95rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .tbc { border: 1px dashed var(--rose); color: var(--rose); border-radius: 999px; padding: 2px 10px; font-size: .75rem; font-weight: 600; }
+
+  /* Oferta */
+  .offer { background: var(--pink); }
+  .offer-card {
+    background: var(--paper); border-radius: 28px; padding: 36px 26px; max-width: 760px; margin: 0 auto;
+    box-shadow: 0 30px 60px rgba(110, 35, 60, .14); display: grid; gap: 30px;
+  }
+  .offer-card .mini-cover { width: 120px; border-radius: 3px 8px 8px 3px; box-shadow: -6px 10px 20px rgba(110, 35, 60, .25); }
+  .offer-top { display: flex; gap: 22px; align-items: center; }
+  .offer-top h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); text-transform: uppercase; line-height: 1; }
+  .offer-top p { margin: 8px 0 0; color: var(--ink-soft); font-size: .95rem; }
+  .includes { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .includes li { padding-left: 32px; position: relative; }
+  .includes li::before {
+    content: "✓"; position: absolute; left: 0; top: 2px; width: 21px; height: 21px; border-radius: 50%;
+    background: var(--rose); color: #fff; font-size: .72rem; font-weight: 800; display: grid; place-items: center;
+  }
+  .offer-price { text-align: center; border-top: 1px solid var(--line); padding-top: 28px; }
+  .offer-price .value { font-size: 3.6rem; font-weight: 900; line-height: 1; }
+  .offer-price .value small { font-size: 1.4rem; vertical-align: top; margin-right: 4px; }
+  .offer-price .terms { color: var(--ink-soft); font-size: .92rem; margin: 8px 0 24px; }
+  .offer-price .btn { width: 100%; max-width: 420px; }
+  .guarantee {
+    display: flex; gap: 16px; align-items: center; background: var(--sand); border-radius: var(--radius);
+    padding: 18px 20px; font-size: .93rem; color: var(--ink-soft);
+  }
+  .guarantee .seal {
+    flex: none; width: 58px; height: 58px; border-radius: 50%; border: 2px solid var(--sage); color: var(--sage);
+    display: grid; place-items: center; text-align: center; font-weight: 800; font-size: .7rem; line-height: 1.05;
+  }
+  .guarantee .seal b { font-size: 1.3rem; display: block; }
+  .guarantee strong { color: var(--ink); }
+  @media (min-width: 720px) { .offer-card { padding: 48px 56px; } }
+
+  /* FAQ */
+  .faq details { border-bottom: 1px solid var(--line); padding: 4px 0; }
+  .faq summary {
+    cursor: pointer; list-style: none; padding: 20px 40px 20px 0; font-weight: 700; font-size: 1.08rem; position: relative;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: 4px; top: 14px; font-size: 1.6rem; font-weight: 400; color: var(--rose); }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin: 0 0 22px; color: var(--ink-soft); }
+
+  /* Fechamento */
+  .closing { text-align: center; padding-top: 0; }
+  .closing p { font-size: 1.3rem; max-width: 26em; margin: 0 auto 28px; }
+
+  footer { background: var(--ink); color: #A99FA3; font-size: .85rem; padding: 40px 0 110px; }
+  footer .disclaimer { max-width: 760px; margin: 0 0 24px; line-height: 1.55; }
+  footer .disclaimer b { color: #E4DADE; }
+  footer .bottom { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; border-top: 1px solid rgba(245, 239, 232, .12); padding-top: 20px; }
+  footer a { color: #E4DADE; }
+
+  /* Barra fixa de compra (celular) */
+  .sticky-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    background: rgba(255, 252, 248, .96); backdrop-filter: blur(8px); border-top: 1px solid var(--line);
+    padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    transform: translateY(110%); transition: transform .3s;
+  }
+  .sticky-cta.show { transform: none; }
+  .sticky-cta .p { line-height: 1.15; font-size: .8rem; color: var(--ink-soft); }
+  .sticky-cta .p b { display: block; font-size: 1.25rem; color: var(--ink); font-weight: 900; }
+  .sticky-cta .btn { padding: 13px 22px; font-size: .95rem; box-shadow: none; white-space: nowrap; }
+  @media (min-width: 860px) {
+    .sticky-cta { display: none; }
+    footer { padding-bottom: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mock-bar">Prévia da página de vendas · preço, garantia e fotos são exemplos para a Fabiana aprovar</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand-line">
+      <strong>Fabiana Motta</strong>
+      <span>Saúde Preventiva Integrativa</span>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <div class="chips">
+          <span>E-book em PDF</span>
+          <span>15 capítulos</span>
+          <span>26 páginas</span>
+        </div>
+        <h1>Desinflame para se proteger</h1>
+        <p class="sub">Um guia de hábitos para a prevenção do câncer feminino através da alimentação, movimento e autocuidado. Sem dieta milagrosa, sem terrorismo nutricional: só o que está ao seu alcance, explicado de um jeito simples.</p>
+        <p class="quote serif">Não espere o diagnóstico para começar a cuidar de você.</p>
+        <div class="price-row">
+          <a id="hero-cta" class="btn" href="#oferta">Quero meu e-book</a>
+          <div class="price"><b>R$ 37</b><small>pagamento único · acesso imediato</small></div>
+        </div>
+      </div>
+      <div class="hero-cover">
+        <img class="book" src="img/capa.jpg" alt="Capa do e-book Desinflame para se proteger, de Fabiana Motta" width="1067" height="1667">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="pain">
+    <div class="wrap narrow">
+      <p class="eyebrow">Por que este e-book existe</p>
+      <h2>Durante muito tempo, aprendemos a procurar ajuda só quando algo já estava errado.</h2>
+      <ul class="beats">
+        <li>Uma dor aparece.</li>
+        <li>Um exame altera.</li>
+        <li>Um nódulo surge.</li>
+        <li>Um cansaço que não passa vira rotina.</li>
+      </ul>
+      <p>E então vem a pergunta: <em>“O que eu posso fazer agora?”</em></p>
+      <blockquote class="serif">
+        <small>Mas existe outra pergunta, ainda mais poderosa:</small>
+        “O que eu posso começar a fazer hoje para cuidar melhor do meu corpo?”
+      </blockquote>
+      <p>Este e-book nasceu dessa mudança de olhar. Ele não promete milagre: nenhum alimento, suplemento ou protocolo substitui avaliação médica. Mas muitos fatores do estilo de vida modificam o risco, e é sobre eles que você tem poder de escolha, todos os dias.</p>
+    </div>
+  </section>
+
+  <section class="learn">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">O que você vai encontrar</p>
+        <h2>15 capítulos, um caminho possível.</h2>
+      </div>
+      <div class="modules">
+        <article class="module">
+          <span class="num">Capítulos 1 e 2</span>
+          <h3>Prevenção é estratégia</h3>
+          <p>Por que a genética não é o único fator, e o que significa, de verdade, desinflamar o corpo: a inflamação crônica silenciosa que a rotina alimenta.</p>
+        </article>
+        <article class="module">
+          <span class="num">Capítulos 3 e 4</span>
+          <h3>Sair do piloto automático</h3>
+          <p>Ultraprocessados, embutidos, açúcar, farinhas brancas e álcool, e uma tabela de trocas: o que colocar no lugar de cada um.</p>
+        </article>
+        <article class="module">
+          <span class="num">Capítulo 5</span>
+          <h3>O prato protetor da mulher</h3>
+          <p>Crucíferas, frutas vermelhas, azeite, ômega-3 e abacate, e como montar o seu prato. Ele não precisa ser perfeito, precisa ser melhor do que era.</p>
+        </article>
+        <article class="module">
+          <span class="num">Capítulos 6 e 7</span>
+          <h3>Intestino, açúcar e hormônios</h3>
+          <p>Fibras e microbiota, açúcar adicionado e peso: por que emagrecer com saúde é uma questão metabólica, não só estética.</p>
+        </article>
+        <article class="module">
+          <span class="num">Capítulos 8 e 9</span>
+          <h3>Movimento, sono e a regra <span style="white-space: nowrap">3-2-1</span></h3>
+          <p>Como colocar mais movimento no dia e a regra 3-2-1: 3 minutos de respiração, 2 posturas de alívio e 1 atitude de higiene do sono.</p>
+        </article>
+        <article class="module">
+          <span class="num">Capítulos 10 a 15</span>
+          <h3>A mulher preventiva</h3>
+          <p>Álcool e cigarro, exames e rastreamento, a verdade sobre suplementos, e por que a prevenção não acontece num detox, mas na soma das escolhas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="peek">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Espie por dentro</p>
+        <h2>Direto, prático e bonito de ler.</h2>
+      </div>
+      <div class="pages">
+        <figure>
+          <img src="img/pagina-trocas.jpg" alt="Página do e-book com a tabela de trocas de alimentos" width="800" height="1250" loading="lazy">
+          <figcaption>A tabela de trocas: o que sai e o que entra</figcaption>
+        </figure>
+        <figure>
+          <img src="img/pagina-prato.jpg" alt="Página do e-book sobre o prato protetor da mulher" width="800" height="1250" loading="lazy">
+          <figcaption>O prato protetor da mulher</figcaption>
+        </figure>
+        <figure>
+          <img src="img/pagina-respiracao.jpg" alt="Página do e-book sobre a respiração 3-2-1" width="800" height="1250" loading="lazy">
+          <figcaption>A regra 3-2-1 para estresse e sono</figcaption>
+        </figure>
+      </div>
+      <p class="hint">Arraste para o lado para ver mais páginas →</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Para quem é</p>
+        <h2>Feito para a mulher que quer cuidar antes.</h2>
+      </div>
+      <div class="fit">
+        <div class="fit-box yes">
+          <h3>É para você se…</h3>
+          <ul>
+            <li>quer cuidar da saúde agora, sem esperar um exame alterado</li>
+            <li>se sente perdida com tanta informação sobre alimentação e quer um caminho simples</li>
+            <li>quer entender o que é inflamação e como a sua rotina influencia nela</li>
+            <li>tem histórico familiar e quer fazer a sua parte, junto com o acompanhamento médico</li>
+            <li>prefere mudanças possíveis a dietas radicais</li>
+          </ul>
+        </div>
+        <div class="fit-box no">
+          <h3>Não é para você se…</h3>
+          <ul>
+            <li>procura uma dieta milagrosa ou um protocolo de cura</li>
+            <li>quer substituir consulta, exame ou tratamento</li>
+            <li>está em tratamento e pensa em mudar a alimentação sem falar com a sua equipe de saúde (converse com ela antes)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="manifesto">
+    <div class="wrap">
+      <p class="serif">Saúde não é apenas tratar o que adoece. <b>É cuidar antes.</b></p>
+    </div>
+  </section>
+
+  <section class="author">
+    <div class="wrap author-grid">
+      <div class="photo-ph" role="img" aria-label="Espaço para a foto da Fabiana">
+        <div><b>Foto da Fabiana</b>retrato</div>
+      </div>
+      <div>
+        <p class="eyebrow">Quem escreveu</p>
+        <h2>Fabiana Motta</h2>
+        <p>Terapeuta com atuação em saúde preventiva integrativa: une educação em saúde, hábitos de vida, alimentação, autocuidado e práticas integrativas.</p>
+        <p>No consultório, em Florianópolis, ajuda cada pessoa a compreender melhor o próprio corpo e a construir hábitos que favoreçam saúde e qualidade de vida. Este e-book reúne a proposta que guia o trabalho dela: cuidar antes de adoecer.</p>
+        <div class="creds">
+          <span>CRTH BR 16449</span>
+          <span>Terapia Integrativa e Estética</span>
+          <span><a href="https://www.instagram.com/fabmotta_esteticaterapeuta/" target="_blank" rel="noopener">@fabmotta_esteticaterapeuta</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="science">
+    <div class="wrap">
+      <div class="science-box">
+        <h3>Com base em quem estuda prevenção</h3>
+        <p class="intro">As recomendações do e-book seguem as diretrizes das principais instituições de pesquisa e prevenção do câncer, citadas ao longo do texto.</p>
+        <div class="refs">
+          <span>INCA<small>Instituto Nacional de Câncer</small></span>
+          <span>OMS<small>Organização Mundial da Saúde</small></span>
+          <span>WCRF<small>World Cancer Research Fund</small></span>
+          <span>ACS<small>American Cancer Society</small></span>
+        </div>
+        <p class="support">Apoio: Rede Feminina de Combate ao Câncer de São José <span class="tbc">a confirmar</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="oferta" class="offer">
+    <div class="wrap">
+      <div class="offer-card">
+        <div class="offer-top">
+          <img class="mini-cover" src="img/capa.jpg" alt="" width="1067" height="1667" loading="lazy">
+          <div>
+            <h2>Desinflame para se proteger</h2>
+            <p>E-book de Fabiana Motta</p>
+          </div>
+        </div>
+        <ul class="includes">
+          <li>E-book em PDF com 26 páginas e 15 capítulos</li>
+          <li>Alimentação anti-inflamatória explicada sem complicação</li>
+          <li>Tabela de trocas: o que sai e o que entra no seu prato</li>
+          <li>O prato protetor da mulher, montado passo a passo</li>
+          <li>A regra 3-2-1 para estresse e sono</li>
+          <li>O que conversar com o seu médico sobre exames e rastreamento</li>
+          <li>Leia no celular, no tablet ou no computador</li>
+        </ul>
+        <div class="offer-price">
+          <div class="value"><small>R$</small>37</div>
+          <p class="terms">Pagamento único no Pix ou no cartão · acesso imediato</p>
+          <a class="btn" href="#oferta" title="Aqui entra o link do checkout (Hotmart, Kiwify ou Pix)">Quero meu e-book agora</a>
+        </div>
+        <div class="guarantee">
+          <div class="seal"><span><b>7</b>dias</span></div>
+          <p style="margin:0"><strong>Garantia de 7 dias.</strong> Se o conteúdo não fizer sentido para você, é só pedir o reembolso dentro de 7 dias após a compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap narrow">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas</p>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <details>
+        <summary>O e-book substitui consulta médica?</summary>
+        <p>Não. Ele tem finalidade educativa e de promoção da saúde: não diagnostica, não trata e não cura. A ideia é que você chegue às suas consultas mais consciente dos seus hábitos e saiba o que perguntar.</p>
+      </details>
+      <details>
+        <summary>Vou precisar fazer uma dieta restrita?</summary>
+        <p>Não. Desinflamar não significa passar fome, viver de salada ou cortar dezenas de alimentos sem necessidade. Significa mudar o padrão, uma escolha de cada vez.</p>
+      </details>
+      <details>
+        <summary>Como eu recebo o e-book?</summary>
+        <p>Assim que o pagamento é confirmado, você recebe o PDF no seu e-mail e pode ler no celular, no tablet ou no computador, quantas vezes quiser.</p>
+      </details>
+      <details>
+        <summary>Estou em tratamento de câncer. Posso ler?</summary>
+        <p>Pode, mas converse com a sua equipe de saúde antes de fazer mudanças importantes na alimentação ou de usar qualquer suplemento.</p>
+      </details>
+      <details>
+        <summary>É só para quem tem histórico de câncer na família?</summary>
+        <p>Não. É para qualquer mulher que queira olhar para o prato, o corpo, o sono, o estresse e os exames com mais consciência, tendo ou não casos na família.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <p>Você tem 7 dias de garantia. Se o conteúdo não fizer sentido para você, é só pedir o reembolso.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <p class="serif">“Eu não posso controlar todos os fatores que influenciam minha saúde. Mas posso cuidar, todos os dias, daquilo que está ao meu alcance.”</p>
+      <a class="btn" href="#oferta">Quero começar hoje</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="disclaimer"><b>Aviso importante.</b> Este e-book tem finalidade educativa e de promoção da saúde. Ele não diagnostica, trata ou cura câncer e não substitui consulta médica, exames, rastreamento ou tratamentos indicados por profissionais habilitados. Nenhum alimento isolado, dieta, suplemento ou prática integrativa garante a prevenção ou a cura do câncer.</p>
+    <div class="bottom">
+      <span>© 2026 Fabiana Motta · Saúde Preventiva Integrativa · CRTH BR 16449</span>
+      <a href="index.html">Conheça as terapias da Fabiana</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <div class="p">Desinflame para se proteger<b>R$ 37</b></div>
+  <a class="btn" href="#oferta" tabindex="-1">Quero meu e-book</a>
+</div>
+
+<script>
+  // Barra fixa de compra: aparece depois do topo e some quando a oferta está na tela
+  const bar = document.getElementById('sticky-cta');
+  let heroVisible = true, offerVisible = false;
+  const update = () => bar.classList.toggle('show', !heroVisible && !offerVisible);
+  new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; update(); })
+    .observe(document.getElementById('hero-cta'));
+  new IntersectionObserver(([e]) => { offerVisible = e.isIntersecting; update(); }, { threshold: 0.2 })
+    .observe(document.getElementById('oferta'));
+</script>
+
+</body>
+</html>

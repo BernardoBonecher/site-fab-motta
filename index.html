@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Fabiana Motta · Terapia Integrativa e Estética</title>
+<meta name="description" content="Terapias integrativas e estética em Florianópolis. Pedras quentes, auriculoterapia, biorressonância, cromoterapia, estética facial e Stiper.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #F5EFE8;
+    --sand-2: #EBE1D6;
+    --paper: #FFFCF8;
+    --ink: #231C1F;
+    --ink-soft: #5E5458;
+    --line: #DCD0C4;
+    --rose: #B23F65;
+    --rose-dark: #962F52;
+    --rose-soft: #F3D9DF;
+    --sage: #5F7458;
+    --sage-soft: #E3E9DE;
+    --radius: 18px;
+    --wrap: 1120px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--sand);
+    color: var(--ink);
+    font: 400 17px/1.6 "Archivo", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  .serif { font-family: "Fraunces", Georgia, serif; }
+  h1, h2, h3 { line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 800; }
+  .eyebrow {
+    font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--sage); margin: 0 0 14px;
+  }
+  .lead { color: var(--ink-soft); font-size: 1.1rem; max-width: 36em; }
+
+  /* Faixa de mockup */
+  .mock-bar {
+    background: var(--ink); color: #F5EFE8; font-size: .8rem; text-align: center; padding: 7px 20px;
+  }
+
+  /* Botões */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; justify-content: center;
+    padding: 15px 26px; border-radius: 999px; font-weight: 600; font-size: 1rem;
+    text-decoration: none; border: 1.5px solid transparent; transition: background .2s, transform .2s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--rose); color: #fff; }
+  .btn-primary:hover { background: var(--rose-dark); }
+  .btn-ghost { border-color: var(--ink); color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: var(--sand); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+
+  /* Cabeçalho */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(245, 239, 232, .92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 20px; }
+  .logo { text-decoration: none; line-height: 1.1; }
+  .logo strong { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.35rem; display: block; }
+  .logo span { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; }
+  .nav-links { display: none; gap: 28px; }
+  .nav-links a { text-decoration: none; font-weight: 500; font-size: .95rem; color: var(--ink-soft); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav .btn { padding: 10px 18px; font-size: .9rem; }
+  @media (min-width: 860px) { .nav-links { display: flex; } }
+
+  /* Hero */
+  .hero { padding: 56px 0 72px; }
+  .hero-grid { display: grid; gap: 44px; align-items: center; }
+  .hero h1 { font-size: clamp(2.5rem, 7vw, 4.4rem); font-weight: 800; margin-bottom: 22px; }
+  .hero h1 em { font-family: "Fraunces", Georgia, serif; font-weight: 400; color: var(--rose); }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 26px; }
+  .trust { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .9rem; color: var(--ink-soft); }
+  .trust span::before { content: "◦ "; color: var(--sage); }
+  .photo-ph {
+    aspect-ratio: 4 / 5; border-radius: 240px 240px var(--radius) var(--radius);
+    background: linear-gradient(160deg, var(--sage-soft), var(--rose-soft));
+    border: 1.5px dashed #B9AB9E; display: grid; place-items: center; text-align: center;
+    color: var(--ink-soft); font-size: .9rem; padding: 24px; max-width: 440px; width: 100%; justify-self: center;
+  }
+  .photo-ph b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--ink); }
+  @media (min-width: 860px) {
+    .hero { padding: 80px 0 96px; }
+    .hero-grid { grid-template-columns: 1.15fr .85fr; }
+  }
+
+  /* Terapias */
+  section { padding: 80px 0; }
+  .section-head { margin-bottom: 40px; }
+  .section-head .lead { margin-top: 14px; }
+  .cards { display: grid; gap: 16px; }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 980px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 28px 26px; display: flex; flex-direction: column; gap: 12px;
+  }
+  .card .icon {
+    width: 48px; height: 48px; border-radius: 50%; background: var(--sage-soft); color: var(--sage);
+    display: grid; place-items: center;
+  }
+  .card .icon svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .card h3 { font-size: 1.25rem; font-weight: 700; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: .97rem; flex: 1; }
+  .card a { font-weight: 600; font-size: .92rem; color: var(--rose); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+
+  /* Banner do e-book */
+  .ebook { padding: 0 0 80px; }
+  .ebook-box {
+    background: var(--rose-soft); border-radius: 28px; overflow: hidden;
+    display: grid; gap: 32px; padding: 40px 28px; align-items: center;
+  }
+  .ebook-box .tag {
+    display: inline-block; background: var(--ink); color: var(--sand); font-size: .75rem; font-weight: 600;
+    letter-spacing: .12em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  .ebook-box h2 { font-weight: 900; text-transform: uppercase; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1; }
+  .ebook-box p { color: #4A3D42; margin: 16px 0 26px; max-width: 30em; }
+  .cover {
+    width: min(260px, 70%); justify-self: center; border-radius: 4px 10px 10px 4px;
+    box-shadow: -10px 18px 36px rgba(80, 30, 45, .25), inset 4px 0 0 rgba(0,0,0,.08);
+    transform: rotate(-3deg);
+  }
+  @media (min-width: 860px) {
+    .ebook-box { grid-template-columns: 1.2fr .8fr; padding: 56px 64px; }
+    .cover { width: 280px; }
+  }
+
+  /* Sobre */
+  .about { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about-grid { display: grid; gap: 40px; align-items: center; }
+  .about .photo-ph { border-radius: var(--radius); aspect-ratio: 1; max-width: 400px; }
+  .about p { color: var(--ink-soft); }
+  .pillars { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 8px; }
+  .pillars li { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: 1.3rem; color: var(--ink); }
+  .pillars li::before { content: "— "; color: var(--rose); font-style: normal; }
+  .badge {
+    display: inline-flex; gap: 8px; align-items: center; border: 1px solid var(--line); border-radius: 999px;
+    padding: 8px 16px; font-size: .88rem; color: var(--ink-soft); background: var(--sand);
+  }
+  @media (min-width: 860px) { .about-grid { grid-template-columns: .8fr 1.2fr; gap: 64px; } }
+
+  /* Depoimentos */
+  .quotes { display: grid; gap: 16px; }
+  @media (min-width: 860px) { .quotes { grid-template-columns: repeat(3, 1fr); } }
+  .quote-ph {
+    border: 1.5px dashed #B9AB9E; border-radius: var(--radius); padding: 28px; min-height: 180px;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 18px; color: var(--ink-soft);
+  }
+  .quote-ph .mark { font-family: "Fraunces", Georgia, serif; font-size: 3rem; line-height: .6; color: var(--rose); }
+  .quote-ph small { font-size: .82rem; }
+
+  /* Contato */
+  .contact { background: var(--ink); color: var(--sand); }
+  .contact .eyebrow { color: #B7C7AF; }
+  .contact h2 em { font-family: "Fraunces", Georgia, serif; font-weight: 400; color: #F0B9C8; }
+  .contact-grid { display: grid; gap: 40px; }
+  .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+  .contact-list li { display: grid; gap: 2px; padding-bottom: 18px; border-bottom: 1px solid rgba(245, 239, 232, .15); }
+  .contact-list small { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: #A99FA3; }
+  .contact-list a { text-decoration: none; font-size: 1.1rem; }
+  .contact-list a:hover { text-decoration: underline; }
+  .contact .lead { color: #CFC5C9; margin: 18px 0 30px; }
+  @media (min-width: 860px) { .contact-grid { grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; } }
+
+  footer { background: var(--ink); color: #A99FA3; font-size: .85rem; padding: 28px 0 96px; border-top: 1px solid rgba(245, 239, 232, .12); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+  /* WhatsApp flutuante */
+  .wa-float {
+    position: fixed; right: 18px; bottom: 18px; z-index: 20; width: 58px; height: 58px; border-radius: 50%;
+    background: #25D366; color: #fff; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  }
+  .wa-float svg { width: 30px; height: 30px; }
+</style>
+</head>
+<body>
+
+<div class="mock-bar">Prévia do site · textos, fotos e depoimentos são exemplos para a Fabiana aprovar</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#topo">
+      <strong>Fabiana Motta</strong>
+      <span>Terapia Integrativa &amp; Estética</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#terapias">Terapias</a>
+      <a href="#ebook">E-book</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Terapia Integrativa e Estética · Florianópolis</p>
+        <h1>Equilíbrio para mente, corpo e <em>espírito</em>.</h1>
+        <p class="lead">Terapias integrativas e estética para você desacelerar, aliviar as tensões e cuidar da saúde antes que o corpo precise gritar.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#terapias">Conhecer as terapias</a>
+        </div>
+        <div class="trust">
+          <span>CRTH BR 16449</span>
+          <span>Jardim Atlântico, Florianópolis</span>
+        </div>
+      </div>
+      <div class="photo-ph" role="img" aria-label="Espaço para a foto da Fabiana">
+        <div><b>Foto da Fabiana</b>no espaço de atendimento</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="terapias" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Terapias</p>
+        <h2>Cada sessão começa ouvindo você.</h2>
+        <p class="lead">Práticas integrativas que podem ser feitas sozinhas ou combinadas, de acordo com o que você está sentindo e com o que o seu corpo pede.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="18" rx="8" ry="3"/><ellipse cx="12" cy="12.5" rx="6" ry="2.5"/><ellipse cx="12" cy="7.5" rx="4" ry="2"/></svg></div>
+          <h3>Pedras quentes</h3>
+          <p>Massagem com pedras aquecidas que soltam a musculatura e convidam a um relaxamento profundo. Para quem chega carregando tensão e estresse.</p>
+          <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20a%20terapia%20com%20pedras%20quentes." target="_blank" rel="noopener">Quero agendar →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M7 9a5 5 0 1 1 10 0c0 3-3 4-3 7a3 3 0 0 1-6 0"/><circle cx="12" cy="9" r="1.2"/></svg></div>
+          <h3>Auriculoterapia</h3>
+          <p>Estímulo de pontos da orelha com sementes ou cristais, usado como apoio para ansiedade, sono e equilíbrio no dia a dia.</p>
+          <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20auriculoterapia." target="_blank" rel="noopener">Quero agendar →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 12h3l2-5 3 10 3-8 2 3h7"/></svg></div>
+          <h3>Biorressonância</h3>
+          <p>Avaliação integrativa usada como ponto de partida para entender como você está e montar o seu plano de cuidado.</p>
+          <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20biorresson%C3%A2ncia." target="_blank" rel="noopener">Quero agendar →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9.5" r="5"/><circle cx="15" cy="9.5" r="5"/><circle cx="12" cy="14.5" r="5"/></svg></div>
+          <h3>Cromoterapia</h3>
+          <p>As cores e a luz como recurso de relaxamento e harmonização, sozinhas ou combinadas com outras terapias.</p>
+          <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20cromoterapia." target="_blank" rel="noopener">Quero agendar →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3c1 5 4 8 9 9-5 1-8 4-9 9-1-5-4-8-9-9 5-1 8-4 9-9z"/></svg></div>
+          <h3>Estética facial</h3>
+          <p>Limpeza, hidratação e cuidados com a pele do rosto, com o olhar integrativo de quem cuida da pessoa inteira.</p>
+          <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20est%C3%A9tica%20facial." target="_blank" rel="noopener">Quero agendar →</a>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="1.6"/><circle cx="12" cy="8" r="1.6"/><circle cx="18" cy="6" r="1.6"/><circle cx="8" cy="14" r="1.6"/><circle cx="16" cy="14" r="1.6"/><circle cx="12" cy="19.5" r="1.6"/></svg></div>
+          <h3>Stiper</h3>
+          <p>Microcristais aplicados em pontos específicos do corpo, sem agulhas, como terapia complementar ao seu cuidado.</p>
+          <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20a%20Stiperterapia." target="_blank" rel="noopener">Quero agendar →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div id="ebook" class="ebook">
+    <div class="wrap">
+      <div class="ebook-box">
+        <div>
+          <span class="tag">Novo e-book</span>
+          <h2>Desinflame para se proteger</h2>
+          <p>Um guia de hábitos para a prevenção do câncer feminino através da alimentação, movimento e autocuidado. Simples, prático e possível.</p>
+          <a class="btn btn-primary" href="desinflame.html">Conhecer o e-book →</a>
+        </div>
+        <img class="cover" src="img/capa.jpg" alt="Capa do e-book Desinflame para se proteger" width="1067" height="1667" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre" class="about">
+    <div class="wrap about-grid">
+      <div class="photo-ph" role="img" aria-label="Espaço para a foto da Fabiana">
+        <div><b>Foto da Fabiana</b>retrato</div>
+      </div>
+      <div>
+        <p class="eyebrow">Sobre</p>
+        <h2>Olá, eu sou a Fabiana.</h2>
+        <p>Atuo com saúde preventiva integrativa, unindo educação em saúde, hábitos de vida, alimentação, autocuidado e práticas integrativas.</p>
+        <p>Meu trabalho é ajudar cada pessoa a compreender melhor o próprio corpo e a construir hábitos que favoreçam saúde e qualidade de vida.</p>
+        <ul class="pillars">
+          <li>Cuidar antes de adoecer.</li>
+          <li>Desinflamar.</li>
+          <li>Prevenir.</li>
+          <li>Viver com mais consciência.</li>
+        </ul>
+        <span class="badge">Terapeuta integrativa · CRTH BR 16449</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Depoimentos</p>
+        <h2>Quem já passou por aqui.</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote-ph"><span class="mark">“</span><span>Colar aqui um feedback real de cliente (destaque “Feedback” do Instagram).</span><small>Nome da cliente · terapia</small></div>
+        <div class="quote-ph"><span class="mark">“</span><span>Colar aqui um feedback real de cliente (destaque “Feedback” do Instagram).</span><small>Nome da cliente · terapia</small></div>
+        <div class="quote-ph"><span class="mark">“</span><span>Colar aqui um feedback real de cliente (destaque “Feedback” do Instagram).</span><small>Nome da cliente · terapia</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Venha <em>desacelerar</em>.</h2>
+        <p class="lead">Me chame no WhatsApp para tirar dúvidas, saber qual terapia faz mais sentido para você e agendar o seu horário.</p>
+        <a class="btn btn-primary" href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+      <ul class="contact-list">
+        <li><small>WhatsApp</small><a href="https://wa.me/554899573740" target="_blank" rel="noopener">(48) 99957-3740</a></li>
+        <li><small>Endereço</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Marinheiro%20Max%20Schramm%2C%202586%2C%20Jardim%20Atl%C3%A2ntico%2C%20Florian%C3%B3polis" target="_blank" rel="noopener">Av. Marinheiro Max Schramm, 2586 · Jardim Atlântico, Florianópolis</a></li>
+        <li><small>Instagram</small><a href="https://www.instagram.com/fabmotta_esteticaterapeuta/" target="_blank" rel="noopener">@fabmotta_esteticaterapeuta</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Fabiana Motta · Terapia Integrativa e Estética</span>
+    <span>CRTH BR 16449</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener" aria-label="Falar com a Fabiana no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+</body>
+</html>
