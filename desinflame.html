@@ -154,6 +154,7 @@
     background: linear-gradient(160deg, #E3E9DE, var(--pink)); border: 1.5px dashed #B9AB9E;
     display: grid; place-items: center; text-align: center; color: var(--ink-soft); font-size: .9rem; padding: 24px;
   }
+  img.photo-ph { padding: 0; border: 0; object-fit: cover; height: auto; display: block; }
   .photo-ph b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--ink); }
   .author p { color: var(--ink-soft); }
   .author .creds { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
@@ -398,9 +399,7 @@
 
   <section class="author">
     <div class="wrap author-grid">
-      <div class="photo-ph" role="img" aria-label="Espaço para a foto da Fabiana">
-        <div><b>Foto da Fabiana</b>retrato</div>
-      </div>
+      <img class="photo-ph" src="img/fabiana-sorriso.jpg" alt="Fabiana Motta sorrindo" width="600" height="600" loading="lazy">
       <div>
         <p class="eyebrow">Quem escreveu</p>
         <h2>Fabiana Motta</h2>
