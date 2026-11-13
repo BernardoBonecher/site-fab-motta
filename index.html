@@ -122,6 +122,27 @@
   .card a { font-weight: 600; font-size: .92rem; color: var(--rose); text-decoration: none; }
   .card a:hover { text-decoration: underline; }
 
+  /* Atendimento online */
+  .online { padding: 0 0 80px; }
+  .online-box {
+    background: var(--sage-soft); border-radius: 28px; padding: 40px 28px;
+    display: grid; gap: 32px; align-items: center;
+  }
+  .online-box h2 { margin-bottom: 14px; }
+  .online-box p { color: var(--ink-soft); margin: 0 0 24px; max-width: 32em; }
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: passo; }
+  .steps li {
+    background: var(--paper); border-radius: var(--radius); padding: 18px 20px 18px 64px; position: relative;
+    color: var(--ink-soft); font-size: .97rem;
+  }
+  .steps li strong { display: block; color: var(--ink); font-size: 1.02rem; }
+  .steps li::before {
+    counter-increment: passo; content: counter(passo); position: absolute; left: 20px; top: 18px;
+    width: 30px; height: 30px; border-radius: 50%; background: var(--sage); color: #fff;
+    display: grid; place-items: center; font-weight: 700; font-size: .9rem;
+  }
+  @media (min-width: 860px) { .online-box { grid-template-columns: 1fr 1fr; padding: 56px 64px; gap: 56px; } }
+
   /* Banner do e-book */
   .ebook { padding: 0 0 80px; }
   .ebook-box {
@@ -205,6 +226,7 @@
     </a>
     <nav class="nav-links">
       <a href="#terapias">Terapias</a>
+      <a href="#online">Online</a>
       <a href="#ebook">E-book</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
@@ -282,6 +304,24 @@
           <p>Microcristais aplicados em pontos específicos do corpo, sem agulhas, como terapia complementar ao seu cuidado.</p>
           <a href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20saber%20mais%20sobre%20a%20Stiperterapia." target="_blank" rel="noopener">Quero agendar →</a>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="online" class="online">
+    <div class="wrap">
+      <div class="online-box">
+        <div>
+          <p class="eyebrow">Atendimento online</p>
+          <h2>Cuidado de onde você estiver.</h2>
+          <p>Para quem não está em Florianópolis ou prefere ser atendida de casa: sessões por videochamada de orientação em saúde preventiva integrativa, olhando para alimentação, hábitos, sono, estresse e autocuidado. As terapias corporais e a estética continuam presenciais.</p>
+          <a class="btn btn-primary" href="https://wa.me/554899573740?text=Ol%C3%A1%2C%20Fabiana!%20Quero%20agendar%20um%20atendimento%20online." target="_blank" rel="noopener">Agendar atendimento online</a>
+        </div>
+        <ol class="steps">
+          <li><strong>Agende pelo WhatsApp</strong>Escolha o melhor dia e horário para você.</li>
+          <li><strong>Receba o link</strong>Antes da sessão, você recebe o link da videochamada.</li>
+          <li><strong>Conecte-se de onde estiver</strong>Pelo celular ou computador, num lugar tranquilo.</li>
+        </ol>
       </div>
     </div>
   </section>
